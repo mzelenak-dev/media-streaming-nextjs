@@ -5,8 +5,9 @@
   --black6: #0F0F0F;
   --black10: #1A1A1A;
   --black12: #1F1F1F;
-  --background: #ffffff;
-  --foreground: #171717;
+  --dark-grey: #141414;
+  --med-grey: #999999;
+  --call-to-action-red: #E50000;
 }
 
 @theme inline {
@@ -14,20 +15,13 @@
   --color-black-6: var(--black6);
   --color-black-10: var(--black10);
   --color-black-12: var(--black12);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-med-grey: var(--med-grey);
+  --color-dark-grey: var(--dark-grey);
+  --color-cta-red: var(--call-to-action-red);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--dark-grey);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,7 +38,7 @@ header nav li.selected {
 
 /* Custom Classes */
 .header-nav-item {
-  @apply font-normal transition-all duration-200;
+  @apply font-normal transition-all duration-200 hover:bg-black-6;
 }
 
 .header-nav-item.selected {

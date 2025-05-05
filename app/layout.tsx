@@ -1,8 +1,6 @@
-import clsx from "clsx";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import { usePathname } from 'next/navigation'
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -15,9 +13,6 @@ export const metadata: Metadata = {
   description: "Media Streaming App using Next.js 15",
 };
 
-const pathname = usePathname();
-const isHomepage = clsx({ homePage: pathname === '/' })
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} antialiased`}>
+      <body className={`${manrope.className} antialiased h-screen`}>
         {children}
       </body>
     </html>

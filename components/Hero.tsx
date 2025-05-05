@@ -5,14 +5,18 @@ import { Play } from 'lucide-react';
 const Hero = () => {
   return (
      <>
-      <section className="hero-image flex flex-col gap-[30px]">
-        <h1 className='text-5xl font-bold'>The Best Streaming Experience</h1>
-        <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
-        <div className="">
-          <Play />
-          <Link href="" className="">Start Watching Now</Link>
+      <div className="hero-image"></div>
+      <div className='flex flex-col gap-[30px] text-center -mt-[40px] mb-[500px]'>
+        <h1 className='text-[58px] text-white font-bold'>The Best Streaming Experience</h1>
+        <div className='w-[66%] m-auto text-[18px] leading-[150%] text-med-grey'>
+          <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more.</p>
+          <p>You can also create your own watchlists, so you can easily find the content you want to watch.</p>
         </div>
-      </section>
+        <div className="flex flex-row gap-[5px] items-center justify-center font-bold w-[251px] h-[64px] m-auto bg-cta-red px-[24px] py-[18px] rounded-[8px] mt-[30px]">
+          <Play className='fill-white' />
+          <Link href="/browse" className="text-white text-[18px] stroke-none">Start Watching Now</Link>
+        </div>
+      </div>
      </>
   )
 }

@@ -6,7 +6,7 @@ import logo from '@/public/logo.png'
 
 const Header = () => {
   return (
-    <header className='flex flex-row justify-between items-center px-[5%] py-[20px]'>
+    <header className='flex flex-row justify-between items-center px-[8.43%] py-[20px]'>
       <Image src={logo} alt="StreamVibe app logo" />
       <Navbar />
       <HeaderIcons />
