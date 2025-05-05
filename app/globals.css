@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --grey75: #BFBFBF;
   --black6: #0F0F0F;
   --black10: #1A1A1A;
   --black12: #1F1F1F;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-grey-75: var(--grey75);
   --color-black-6: var(--black6);
   --color-black-10: var(--black10);
   --color-black-12: var(--black12);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,19 +33,25 @@ body {
 
 header nav li {
   padding: 10px 24px;
+  color: var(--grey75);
 }
 
 header nav li.selected {
-  background-color: var(--black10);
   color: #ffffff;
   border-radius: 8px;
+  background-color: var(--black10);
 }
 
 /* Custom Classes */
 .header-nav-item {
-  @apply font-normal transition-all duration-200 hover:font-bold;
+  @apply font-normal transition-all duration-200;
 }
 
 .header-nav-item.selected {
   @apply font-bold;
+}
+
+.hero-image {
+  background-image: url('../public/hero.png');
+  @apply h-screen bg-cover bg-center flex items-center justify-center text-white;
 }
