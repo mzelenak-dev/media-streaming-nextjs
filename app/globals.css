@@ -49,3 +49,8 @@ header nav li.selected {
   background-image: url('../public/hero.png');
   @apply h-screen bg-cover bg-center flex items-center justify-center text-white;
 }
+
+.start-trial-block {
+  background-image: url('../public/footer-trial.png');
+  @apply bg-cover bg-center flex items-center justify-center w-full h-full;
+}
