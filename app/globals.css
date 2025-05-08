@@ -5,6 +5,7 @@
   --black6: #0F0F0F;
   --black10: #1A1A1A;
   --black12: #1F1F1F;
+  --black15: #262626;
   --dark-grey: #141414;
   --med-grey: #999999;
   --call-to-action-red: #E50000;
@@ -15,6 +16,7 @@
   --color-black-6: var(--black6);
   --color-black-10: var(--black10);
   --color-black-12: var(--black12);
+  --color-black-15: var(--black15);
   --color-med-grey: var(--med-grey);
   --color-dark-grey: var(--dark-grey);
   --color-cta-red: var(--call-to-action-red);
@@ -51,4 +53,8 @@ header nav li.selected {
 
 #start-trial-block {
   background-image: url('../public/footer-trial.png');
+}
+
+.simpleToggle p.selected {
+  @apply font-bold text-white bg-black-12;
 }
