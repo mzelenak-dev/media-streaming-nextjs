@@ -64,3 +64,13 @@ header nav li.selected {
 .contentNavigator div.selected {
   @apply w-[23px] bg-cta-red;
 }
+
+.bg-gradient-block {
+  background: linear-gradient(
+    35deg,
+    #0d0d0d 75%,
+    rgba(67, 0, 0, 0.3) 85%,
+    rgba(67, 0, 0, 0.1) 95%,
+    rgba(67, 0, 0, 0) 100%
+  );
+}

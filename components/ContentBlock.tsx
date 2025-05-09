@@ -4,7 +4,7 @@ type ContentBlockProps = {
   leadText: string;
   subText: string;
   actionComponent?: ReactNode;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const ContentBlock = ({leadText, subText, actionComponent, children}: ContentBlockProps) => {
