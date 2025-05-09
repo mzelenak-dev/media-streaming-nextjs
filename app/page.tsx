@@ -1,3 +1,4 @@
+import ActionButton from "@/components/ActionButton";
 import ContentBlock from "@/components/ContentBlock";
 import ContentNavigator from "@/components/ContentNavigator";
 import Hero from "@/components/Hero";
@@ -22,13 +23,13 @@ export default function Home() {
         <ContentBlock
           leadText="Frequently Asked Questions"
           subText="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
-          actionComponent={true}
+          actionComponent={<ActionButton buttonText='Ask a Question' /> }
           children
         />
         <ContentBlock
           leadText="Choose the plan that's right for you"
           subText="Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"
-          actionComponent={<SimpleToggle option1='Monthly' option2='Yearly' />}
+          actionComponent={<SimpleToggle optionsArray={['Yearly', 'Monthly']} />}
           children
         />
       </div>
