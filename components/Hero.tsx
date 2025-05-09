@@ -6,7 +6,7 @@ const Hero = () => {
   return (
      <>
       <div id="hero-image" className="h-screen bg-center flex items-center justify-center text-white"></div>
-      <div className='flex flex-col gap-[30px] text-center -mt-[40px] mb-[500px]'>
+      <div className='flex flex-col gap-[30px] text-center -mt-[40px] mb-[200px]'>
         <h1 className='text-[58px] text-white font-bold'>The Best Streaming Experience</h1>
         <div className='w-[66%] m-auto text-[18px] leading-[150%] text-med-grey'>
           <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more.</p>

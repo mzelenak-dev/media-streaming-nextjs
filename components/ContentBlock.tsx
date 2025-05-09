@@ -10,8 +10,8 @@ type ContentBlockProps = {
 const ContentBlock = ({leadText, subText, actionComponent, children}: ContentBlockProps) => {
   return (
     <section className='mb-[100px]'>
-      <div className='flex flex-row justify-between'>
-        <div className='flex flex-col max-w-[75%]'>
+      <div className='flex flex-row justify-between items-center'>
+        <div className='flex flex-col max-w-[80%]'>
           <h3 className='text-white font-bold text-[38px]'>{leadText}</h3>
           <p className='text-med-grey text-[18px]'>{subText}</p>
         </div>

@@ -1,4 +1,5 @@
 import ContentBlock from "@/components/ContentBlock";
+import ContentNavigator from "@/components/ContentNavigator";
 import Hero from "@/components/Hero";
 import SimpleToggle from "@/components/SimpleToggle";
 
@@ -10,7 +11,7 @@ export default function Home() {
         <ContentBlock
           leadText="Explore our wide variety of categories"
           subText="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
-          actionComponent={true}
+          actionComponent={<ContentNavigator pages={4} />}
           children
         />
         <ContentBlock

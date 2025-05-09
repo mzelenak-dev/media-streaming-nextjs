@@ -6,6 +6,7 @@
   --black10: #1A1A1A;
   --black12: #1F1F1F;
   --black15: #262626;
+  --black-20: #333333;
   --dark-grey: #141414;
   --med-grey: #999999;
   --call-to-action-red: #E50000;
@@ -17,6 +18,7 @@
   --color-black-10: var(--black10);
   --color-black-12: var(--black12);
   --color-black-15: var(--black15);
+  --color-black-20: var(--black-20);
   --color-med-grey: var(--med-grey);
   --color-dark-grey: var(--dark-grey);
   --color-cta-red: var(--call-to-action-red);
@@ -57,4 +59,8 @@ header nav li.selected {
 
 .simpleToggle p.selected {
   @apply font-bold text-white bg-black-12;
+}
+
+.contentNavigator div.selected {
+  @apply w-[23px] bg-cta-red;
 }
